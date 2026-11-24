@@ -1,0 +1,284 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f3f4f8;
+    color: #25243a;
+}
+
+header {
+    background: #ffffff;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e8e8ee;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #6546d7;
+}
+
+.logo span {
+    color: #f06a9b;
+}
+
+header p {
+    color: #77758a;
+    font-size: 14px;
+}
+
+main {
+    min-height: 80vh;
+    padding: 45px 20px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background: white;
+    width: 100%;
+    max-width: 430px;
+    padding: 38px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(40, 30, 80, 0.08);
+}
+
+.login-box h1 {
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    color: #858397;
+    margin-bottom: 28px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 17px 0 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #dedee8;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+input:focus, textarea:focus {
+    border-color: #7658df;
+}
+
+button {
+    background: #6546d7;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #5033bd;
+}
+
+.login-box button {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.trocar {
+    text-align: center;
+    margin-top: 23px;
+    font-size: 14px;
+    color: #77758a;
+}
+
+.trocar a {
+    color: #6546d7;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.mensagem {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #d04444;
+}
+
+.escondido {
+    display: none !important;
+}
+
+/* FEED */
+
+.feed-container {
+    max-width: 850px;
+    margin: auto;
+}
+
+.feed-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.feed-topo h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.feed-topo p {
+    color: #858397;
+}
+
+.botao-sair {
+    padding: 12px 25px;
+    background: #f06a9b;
+}
+
+.botao-sair:hover {
+    background: #d84d80;
+}
+
+.criar-post {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(40, 30, 80, 0.05);
+    margin-bottom: 35px;
+}
+
+.criar-post h2, .publicacoes h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.criar-post textarea {
+    height: 100px;
+    resize: vertical;
+    margin-bottom: 12px;
+}
+
+.criar-post input {
+    margin-bottom: 15px;
+}
+
+.criar-post button {
+    padding: 13px 28px;
+}
+
+.publicacao {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 20px rgba(40, 30, 80, 0.05);
+}
+
+.publicacao-topo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.avatar {
+    background: #eee9ff;
+    color: #6546d7;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.publicacao-topo h3 {
+    font-size: 15px;
+}
+
+.publicacao-topo small {
+    color: #999;
+    display: block;
+    margin-top: 4px;
+}
+
+.publicacao p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.imagem-publicacao {
+    width: 100%;
+    max-height: 430px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.botao-curtir {
+    background: #fff0f5;
+    color: #df477c;
+    padding: 10px 18px;
+}
+
+.botao-curtir:hover {
+    background: #ffe0eb;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #999;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 18px 5%;
+    }
+
+    header p {
+        display: none;
+    }
+
+    main {
+        padding: 30px 15px;
+    }
+
+    .login-box {
+        padding: 25px;
+    }
+
+    .feed-topo {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .publicacao, .criar-post {
+        padding: 18px;
+    }
+}

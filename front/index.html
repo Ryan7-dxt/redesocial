@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect - Rede Social</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">connect<span>.</span></div>
+        <p>Sua rede, suas conexões.</p>
+    </header>
+
+    <main>
+
+        <!-- LOGIN -->
+        <section id="telaLogin" class="login-container">
+            <div class="login-box">
+                <h1>Bem-vindo de volta!</h1>
+                <p class="subtitulo">Entre para acompanhar suas conexões.</p>
+
+                <form id="formLogin">
+                    <label>Usuário ou e-mail</label>
+                    <input type="text" id="login" placeholder="Digite seu usuário ou e-mail" required>
+
+                    <label>Senha</label>
+                    <input type="password" id="senhaLogin" placeholder="Digite sua senha" required>
+
+                    <button type="submit">Entrar</button>
+                </form>
+
+                <p class="trocar">
+                    Ainda não tem conta?
+                    <a href="#" id="irCadastro">Cadastre-se</a>
+                </p>
+
+                <p id="mensagemLogin" class="mensagem"></p>
+            </div>
+        </section>
+
+        <!-- CADASTRO -->
+        <section id="telaCadastro" class="login-container escondido">
+            <div class="login-box">
+                <h1>Crie sua conta</h1>
+                <p class="subtitulo">Faça parte da nossa comunidade.</p>
+
+                <form id="formCadastro">
+                    <label>Nome completo</label>
+                    <input type="text" id="nome" required>
+
+                    <label>Nome de usuário</label>
+                    <input type="text" id="username" required>
+
+                    <label>E-mail</label>
+                    <input type="email" id="email" required>
+
+                    <label>Senha</label>
+                    <input type="password" id="senhaCadastro" required>
+
+                    <button type="submit">Criar conta</button>
+                </form>
+
+                <p class="trocar">
+                    Já tem uma conta?
+                    <a href="#" id="irLogin">Fazer login</a>
+                </p>
+
+                <p id="mensagemCadastro" class="mensagem"></p>
+            </div>
+        </section>
+
+        <!-- FEED -->
+        <section id="telaFeed" class="feed-container escondido">
+
+            <div class="feed-topo">
+                <div>
+                    <h1>Feed</h1>
+                    <p>Veja o que está acontecendo na comunidade.</p>
+                </div>
+
+                <button id="sair" class="botao-sair">Sair</button>
+            </div>
+
+            <div class="criar-post">
+                <h2>Compartilhe um momento</h2>
+
+                <form id="formPost">
+                    <textarea id="legenda" placeholder="O que você está pensando?" required></textarea>
+
+                    <input type="text" id="imagemUrl" placeholder="URL da imagem (opcional)">
+
+                    <button type="submit">Publicar</button>
+                </form>
+
+                <p id="mensagemPost" class="mensagem"></p>
+            </div>
+
+            <div class="publicacoes">
+                <h2>Publicações recentes</h2>
+                <div id="listaPublicacoes"></div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Connect. Desenvolvido para fins acadêmicos.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
